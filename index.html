@@ -523,7 +523,8 @@
           </div>
         </div>
 
-        <form class="contact-form" name="contact" method="POST" data-netlify="true">
+      <form class="contact-form" name="contact" method="POST" data-netlify="true">
+        <input type="hidden" name="form-name" value="contact" />
           <div class="form-row">
             <input type="text" placeholder="Your Name" name="name" required />
             <input type="text" placeholder="Business Name" name="business_name" />
@@ -630,6 +631,21 @@
     window.addEventListener('resize', () => {
       resize();
       initNodes(55);
+    });
+
+    document.querySelector('form').addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const form = e.target;
+      const data = new FormData(form);
+      await fetch('/', { method: 'POST', body: data });
+      const btn = form.querySelector('.btn-submit');
+      btn.textContent = 'Message Sent!';
+      btn.style.background = '#4caf81';
+      setTimeout(() => {
+        btn.textContent = 'Send Message';
+        btn.style.background = '';
+        form.reset();
+      }, 3000);
     });
   </script>
 

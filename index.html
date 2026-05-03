@@ -159,7 +159,7 @@
     }
     .hero-badge-main strong, .hero-badge-main p { color: var(--ivory); }
     .hero-badge-main .badge-icon { background: rgba(255, 255, 255, 0.1); }
-    .hero-badge-main .badge-icon svg { stroke: var(--ivory); }
+    .hero-badge-main .badge-icon svg { strokƒe: var(--ivory); }
 
     /* ─── SECTIONS ─── */
     section { padding: 100px 5%; }
@@ -179,7 +179,7 @@
     /* ─── SERVICES ─── */
     #services { background: var(--white); }
     .services-grid {
-      display: grid; grid-template-columns: repeat(3, 1fr);
+      display: grid; grid-template-columns: repeat(2, 1fr);
       gap: 2px; margin-top: 4rem;
     }
     .service-card {
@@ -321,9 +321,8 @@
     <div class="hero-grid">
       <div>
         <div class="hero-eyebrow">IT Infrastructure Specialists</div>
-        <h1>Networks built for the <em>modern</em> customer</h1>
-        <p class="hero-sub">Ikonik Solutions delivers enterprise-grade networking, security, and access control for
-          small businesses — powered by UniFi.</p>
+        <h1>IT roots.<br><em>Software</em> wings.</h1>
+        <p class="hero-sub">Ikonik Solutions builds the infrastructure your business runs on — and the software that makes it smarter. From UniFi networks to AI-powered applications.</p>
         <a href="#contact" class="btn-primary">Get a Free Quote</a>
         <a href="#services" class="btn-ghost">Our Services</a>
       </div>
@@ -357,7 +356,7 @@
               </svg>
             </div>
             <strong>Security Cameras</strong>
-            <p>AI notifications</p>
+            <p>Camera systems, mobile access and AI alerts</p>
           </div>
           <div class="hero-badge">
             <div class="badge-icon">
@@ -369,6 +368,16 @@
             <strong>Access Control</strong>
             <p>Smart door systems & credentials</p>
           </div>
+          <div class="hero-badge">
+            <div class="badge-icon">
+              <svg viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m21 7.5-9-5.25L3 7.5m18 0-9 5.25m9-5.25v9l-9 5.25M3 7.5l9 5.25M3 7.5v9l9 5.25m0-9v9"/>
+              </svg>
+            </div>
+            <strong>Software</strong>
+            <p>Custom software solutions to combat business problems</p>
+          </div>
+        </div>
         </div>
       </div>
     </div>
@@ -412,15 +421,26 @@
           <div class="service-num">03</div>
           <div class="service-icon">
             <svg viewBox="0 0 24 24">
-              <rect x="3" y="11" width="18" height="11" rx="2" />
-              <path d="M7 11V7a5 5 0 0 1 10 0v4" />
-            </svg>
+                <rect x="3" y="11" width="18" height="11" rx="2" />
+                <path d="M7 11V7a5 5 0 0 1 10 0v4" />
+              </svg>
           </div>
           <h3>Door Access Control</h3>
           <p>Keycard, fob, and mobile-credential access systems for entry and restricted areas. Centrally managed so you
             can grant or revoke access instantly from anywhere — no locksmith required.</p>
-        </div>
+          </div>
 
+          <div class="service-card">
+            <div class="service-num">04</div>
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m21 7.5-9-5.25L3 7.5m18 0-9 5.25m9-5.25v9l-9 5.25M3 7.5l9 5.25M3 7.5v9l9 5.25m0-9v9"/>
+              </svg>
+            </div>
+            <h3>Software Solutions</h3>
+            <p>Custom-built software — powered by cloud and agentic AI — designed to solve your real business problems.</p>
+          </div>
+          
       </div>
     </div>
   </section>
@@ -431,15 +451,12 @@
       <div class="about-grid">
         <div>
           <div class="section-label">About Us</div>
-          <h2>Technology that works as hard as your team</h2>
+          <h2>Built from the ground up. <em>All the way up.</em></h2>
           <p style="color: var(--text-muted); margin-top: 1rem;">
-            Ikonik Solutions was founded to solve a real problem: small and mid-size businesses deserve the same
-            reliable, secure infrastructure that large hospitals rely on — without the enterprise price tag or the
-            enterprise runaround.
+            Ikonik Solutions started with a simple belief: every business deserves enterprise-grade technology, not just the ones with enterprise budgets. We built our reputation on clean UniFi network installs, thoughtful infrastructure design, and support that actually picks up the phone.
           </p>
           <p style="color: var(--text-muted); margin-top: 1rem;">
-            We specialize exclusively in UniFi-based deployments, which means we know the platform inside and out. No
-            generalist guesswork — just clean installs, thoughtful design, and support that picks up the phone.
+            That foundation reinforced what we already knew: technology problems don't stop at the network edge. With over 20 years of software engineering experience solving real business problems, expanding into software wasn't a pivot — it was inevitable. Today Ikonik Solutions delivers both: the network your business runs on, and the software that makes it smarter.
           </p>
           <div class="about-stats">
             <div class="stat-box">
@@ -451,8 +468,8 @@
               <div class="stat-label">Net, Cameras & Access</div>
             </div>
             <div class="stat-box">
-              <div class="stat-num">SMB</div>
-              <div class="stat-label">Clinic Focused</div>
+              <div class="stat-num">AI</div>
+              <div class="stat-label">Powered Software</div>
             </div>
             <div class="stat-box">
               <div class="stat-num">DFW</div>
@@ -463,13 +480,13 @@
         <div class="about-image-block">
           <div class="about-visual">
             <span class="about-tag">Why Ikonik?</span>
-            <div class="about-visual-title">We speak human — not just IT.</div>
+            <div class="about-visual-title">IT roots. Software wings.</div>
             <ul class="about-visual-list">
-              <li>Designed around business workflows and privacy</li>
-              <li>Single-vendor UniFi ecosystem for simple management</li>
-              <li>Fast installs with minimal disruption to your operations</li>
-              <li>Remote monitoring and ongoing support packages available</li>
-              <li>Transparent pricing — no hidden fees or surprise hardware costs</li>
+              <li>Enterprise-grade UniFi networking for clinics and small businesses</li>
+              <li>AI-powered software products built on real client problems</li>
+              <li>End-to-end ownership — we design, install, and support everything</li>
+              <li>Transparent pricing across both infrastructure and software</li>
+              <li>One partner for your network, your cameras, your access control, and your apps</li>
             </ul>
           </div>
         </div>
@@ -482,8 +499,7 @@
     <div class="section-inner">
       <div class="section-label">Reach Out</div>
       <h2>Let's build your network.</h2>
-      <p class="section-sub">Ready to upgrade your company's infrastructure? Get in touch for a free site assessment and
-        quote.</p>
+      <p class="section-sub">Ready to upgrade your infrastructure, explore our software, or both? Get in touch and let's build something.</p>
       <div class="contact-grid">
         <div class="contact-items">
           <div class="contact-item">
@@ -546,7 +562,7 @@
     <p style="color:rgba(248,245,238,0.3); font-size:0.8rem;">Dallas–Fort Worth, TX</p>
   </footer>
 
-  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+  <script>
     // ── Network Canvas Animation ──
     const canvas = document.getElementById('networkCanvas');
     const ctx = canvas.getContext('2d');
@@ -615,7 +631,7 @@
 
         n.x += n.vx;
         n.y += n.vy;
-                if (n.x < 0 || n.x > W) n.vx *= -1;
+        if (n.x < 0 || n.x > W) n.vx *= -1;
         if (n.y < 0 || n.y > H) n.vy *= -1;
       });
 
